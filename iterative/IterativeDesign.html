@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  </head>
+    <body style="background-color: #fef9ef; font-family: 'Alata',sans-serif;">
+    
+        <div class="topbox"></div>
+        <div class="header">
+            <a href="../main/main.html">
+                <img src="../main/simonedunbar.svg" alt="logo" style="height: 3vh;"></a>
+          <div class="options">
+              <div ><a href="../main.html">Work</a> </div>
+              <div> <a href="aboutme.html">About</a> </div>
+              <div> <a href="../resume.pdf" target="_blank">Resume</a> </div>
+              <a href="https://www.linkedin.com/in/simone-dunbar/" target="_blank">
+                <img id="linkedin" src="../main/linkedin.svg" alt="linkedin" style="height: 4vh;">
+              </a>
+              <a href="https://github.com/smdunbar" target="_blank">
+                <img id="github" src="../main/github.svg" alt="github" style="height: 4vh;">
+              </a>
+              
+            </div>
+        </div>
+            <div class="container">
+            <div class="titleContainer hidden">
+                <img src="pics/ID.svg" alt="logo" style="height: 30vh;">
+                <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
+                
+                <div class="experience hidden"> <!-- row-->
+                    <div style=" margin-right: 20px;">Team:</div>
+                    <div>Simone Dunbar</div>
+                    <img src="../main/yellowdot.png" alt="yellow dot" class="dot">
+                        <div>Wesley Hackett  </div>
+                        <img src="../main/yellowdot.png" alt="yellow dot" class="dot">
+                        <div>Bohdan Karavan </div>
+                        <img src="../main/yellowdot.png"alt="yellow dot" class="dot">
+                        <div> Julia Stepanenko </div>
+                    </div>
+                </div>
+            <div class="textContainer hidden">
+            <div class="subtitle1 hidden">
+                <p style="font-size: 2vw; padding-bottom: 8vh">
+                Welcome to the Redesign project for Allara Health!
+                </p>
+                <p style="font-size: 2vw; padding-bottom: 8vh">
+                Our team collaborated to redesign the dashboard for
+                <span style="color: #52BAE0">Allara Health:</span> a virtual care
+                platform specializing
+                <span style="color: #52BAE0">
+                    in women's hormonal and metabolic health,</span
+                >
+                particularly, conditions like<span style="color: #52BAE0">
+                    polycystic ovary syndrome (PCOS)</span
+                >
+                </p>
+                <p style="font-size: 2vw; padding-bottom: 16vh">
+                We received a few specs based on the difficulties patients experience and worked to create a dashboard that would <span style="color:#52BAE0">increase patient retention.</span>
+                </p>
+            </div>
+            <div class="subtitle1 hidden">
+                <div style="font-weight: 600; color: #227C9D; margin-bottom: 8vh">
+                The Current Dashboard
+                </div>
+                <div>
+                <img class="imgContainer hidden" src="pics/Allara_Existing_Dashboard.png" />
+                <style>
+                    table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    }
+                
+                    th, td {
+                    font-size: 1.2vw;
+                    vertical-align: top;
+                    padding: 1vh 2vw;
+                    }
+                
+                    th:first-child,
+                    td:first-child {
+                    width: 30%;
+                    padding-right: 2vw;
+                    }
+                
+                    th:last-child,
+                    td:last-child {
+                    width: 70%;
+                    }
+                
+                    tr {
+                    padding-bottom: 8vh;
+                    }
+                </style>
+                
+                <table>
+                    <tr>
+                    <th>Section</th>
+                    <th>Details</th>
+                    </tr>
+                    <tr>
+                    <td>Static Care Timeline</td>
+                    <td>
+                        Informational block for expectation setting (disappears after four appointments, collapsable)
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>To-Dos</td>
+                    <td>
+                        Collect information from patients: Share home address, lab preferences, join appointments, download mobile app, review nutrition materials
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Appointments</td>
+                    <td>
+                        Modify appointments, add details to calendar, access provider notes post-appointment
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>My Health</td>
+                    <td>
+                        View past appointments, book follow-up visits, see lab orders/results, download PDFs, track progress (e.g., walking 10,000 steps, drinking two liters of water)
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Booking Appointments</td>
+                    <td>
+                        Medical follow-up, nutrition follow-up, confirm state, see availability, book with dietician
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Messaging</td>
+                    <td>
+                        Message concierge team and providers, start new threads, select topics, concierge team routes messages to providers or answers them
+                    </td>
+                    </tr>
+                </table>          
+                <br />
+                <p style="font-size: 1.5vw; padding-bottom: 8vh">
+                    The major <span style="color: #52BAE0">pain points</span> that we
+                    had to account in our redesign were:
+                </p>
+                <ul style="font-size: 1.5vw; list-style-type: none; padding: 0;">
+                <li>
+                    - Chaotic nature and oversaturation of information on the dashboard
+                </li>
+                <li>
+                    - Users being unsure on where to proceed and how to join appointments
+                </li>
+                <li> - Patients having difficulty accessing post-visit notes</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <br />
+            <div class="textContainer">
+            <div class="subtitle1 hidden" style="margin-bottom: 8vh">
+                <div style="font-weight: 600; padding-bottom: 4vh; color: #227C9D">
+                Sketches
+                </div>
+                <p class="hidden" style="font-size: 1.5vw; padding-bottom: 8vh">
+                To start the redesign, we first need to focus on brainstorming some
+                sketches based on the Allar's needs from above. Our team did
+                <span style="color: #52BAE0">
+                    not look at the existing design </span
+                >prior to brainstorming but focused our efforts to solve the <span style="color:#52BAE0">pain points.</span>
+                </p>
+
+                <div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #227C9D;">
+                Wes's Sketches
+                </div>
+                
+                <div class="grid-container">
+                <img class="imgContainer hidden" src="pics/Wes_Appts.jpeg" />
+                <img class="imgContainer hidden" src="pics/Wes_Dashboard.jpg" />
+                <img class="imgContainer hidden" src="pics/Wes_ToDos.jpeg" />
+                </div>
+                
+                <div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #227C9D;">
+                Bohdan's Sketches
+                </div>
+                
+                <div class="grid-container">
+                <img class="imgContainer hidden" src="pics/Bohdan_Appts.jpg" />
+                <img class="imgContainer hidden" src="pics/Bohdan_Dashboard.jpg" />
+                <img class="imgContainer hidden" src="pics/Bohdan_Profile.jpg" />
+                </div>
+                
+                <div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #227C9D;">
+                Julia's Sketches
+                </div>
+                
+                <div class="grid-container">
+                <img class="imgContainer hidden" src="pics/Julia_Dashboard.jpg" />
+                <img class="imgContainer hidden" src="pics/Julia_Profile.jpg" />
+                <img class="imgContainer hidden" src="pics/Julia_ToDos.jpg" />
+                </div>
+                
+                <div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #227C9D;">
+                Simone's Sketches
+                </div>
+                
+                <div class="grid-container">
+                <img class="imgContainer hidden" src="pics/Simone.png" />
+                </div>
+
+                <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
+                Based on the work of our team members, we all agreed on the modular design of the re-designed page, 
+                as well as on adding multiple pages for key items like To Dos, Appointments, etc.
+                <br></br>
+                </div>
+
+                <div
+                class="hidden"
+                style="
+                font-size: 2rem;
+                padding-right: 22vw;
+                font-weight: bold;
+                color: #227C9D;
+                "
+            >
+                
+                Wireframes
+            </div>
+            <div
+                class="hidden"
+                style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh"
+            >
+            The next step is to create a set of wireframes based on the sketches above. 
+            </div>
+         
+            <img
+            class="imgContainer hidden"
+            src="pics/Wireframes.png"
+            style="max-width: 100%; max-height: auto; width: auto; height: auto"
+            />  
+        </div>
+
+            <div
+                class="hidden"
+                style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh"
+            >
+            Key notes: <br></br>
+                - Dashboard separated into three main blocks - appointments, to-dos, and lab results.
+                <br></br>
+                - Timeline moved to the bottom with expandable buttons for new patients.
+                <br></br>
+                - Filter for upcoming and past appointments, join button closer to appointment time, directions for in-person meetings.
+                <br></br>
+                - More information for past appointments, including notes and recommendations.
+                <br></br>
+                - Easy access to different sections.
+                <br></br>
+                - Added progress bar and reward system to enhance user engagement and retention.
+                <br></br>
+            </div>
+
+            <div
+                class="hidden"
+                style="
+                    font-size: 2rem;
+                    padding-right: 22vw;
+                    font-weight: bold;
+                    color: #227C9D;
+                "
+                >
+                First round feedback
+            </div>
+
+            <div
+                class="hidden"
+                style="font-size: 1.5vw; padding-right: 14vw; margin-top: 2vh"
+            >
+            Liv Jenks, the Product Manager from Allara, and Caroline Walters, a Portfolio Operations Manager at GV,
+            commented on our wireframe design and provided essential feedback!
+            <br></br>
+            <div style="display: flex;
+            flex-direction: row;
+            width: 100%;">
+                <div style="padding-right: 4vw;">
+                <p style="text-align:center; color:#51a845">
+                    Positive changes <br></br>
+                    Modular design is great and makes the layout more approachaba
+                    <br></br>
+                    Moving the timeline is a good idea, but requires additional work
+                    <br></br>
+                    The addition of progression is amazing 
+                    <br></br>
+                </p>
+                </div>
+                <div>
+                <p style="text-align:center; color: #9c4a44;">
+                    Things to note <br></br>
+                    Need to have a more forward-looking approach with a dynamic timeline
+                    <br></br>
+                    No appointments are ever in person
+                    <br></br>
+                    Lab results are rather infrequent, so should not be prioritized on the dashboard
+                </p>
+                </div> 
+            </div>
+
+            </div>
+            
+
+            <div
+            class="hidden"
+            style="
+                font-weight: 600;
+                color: #227C9D;
+                margin-bottom: 4vh;
+                font-size: 2vw;
+            "
+            >
+            Final Prototype
+            </div>
+            <p style="font-size: 1.5vw; padding-bottom: 8vh" class="hidden">
+            After receiving a lot of positive feedback as well as pointers to work on,
+            we felt excited to implement our ideas in Figma. Together, we developed 
+            an interactive Figma prototype to convey our vision for Allara’s patients. <br></br>
+            <a href="https://www.figma.com/design/XrfLqT9mi25iSfUhUEF592/Allara?node-id=1-2&t=z7E2VV9Wv6AzPsHI-1" style="color: #52BAE0;text-decoration: underline;">Figma file</a>
+            </p>
+            <div
+            class="hidden"
+            style="
+                font-size: 2rem;
+                padding-right: 22vw;
+                font-weight: bold;
+                color: #227C9D;
+            "
+            >
+            Final Prototype Walkthrough
+            </div>
+            <div
+            style="
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            "
+        >
+            <video class="vidContainer" width="1280" height="720"  controls>
+            <source src="pics/allara-final-walkthrough-video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div
+            class="hidden"
+            style="
+                font-size: 2rem;
+                padding-right: 22vw;
+                font-weight: bold;
+                color: #227C9D;
+                margin-top: 20px
+            "
+            >
+            Main Features
+            </div>
+            <div style="display: flex; justify-content: space-around; padding: 20px;">
+        <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+            <h3 style="color: #52BAE0;">Dashboard</h3>
+            <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px;">- To-Dos component is the highest priority element</li>
+            <li style="margin-bottom: 20px;">- Appointments and health goals are in the middle of the screen</li>
+            <li style="margin-bottom: 20px;">- Every component is interactable and leads to its own dedicated page</li>
+        </ul>
+        </div>
+        <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+            <h3 style="color: #52BAE0;">Appointments</h3>
+            <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px; margin-top: 20px">- Join button increases in size and changes color for upcoming appointments</li>
+            <li style="margin-bottom: 20px;">- Clear distinction between past/upcoming appointments</li>
+            <li style="margin-bottom: 20px;">- Simple navigation to get to notes or lab results</li>
+
+            </ul>
+        </div>
+        <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+            <h3 style="color: #52BAE0;">To-dos</h3>
+            <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px; margin-top: 20px">- The goals and to-dos have progress bars to gamify the process</li>
+            <li style="margin-bottom: 20px;">- To-Dos separated into popup screens</li>
+            </ul>
+        </div>
+        </div>
+
+
+            <div
+            class="hidden"
+            style="
+                font-size: 2rem;
+                padding-right: 22vw;
+                font-weight: bold;
+                color: #227C9D;
+            "
+            >
+            Final Feedback from Liz Jenks
+            </div>
+
+            <div style="display: flex; justify-content: space-around; padding: 20px;">
+            <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+                <h3 style="color: #52BAE0;">Positives</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 20px; margin-top: 20px">- Clean up font sizes and different type styles.</li>
+                <li style="margin-bottom: 20px;">- The sections are very clear.</li>
+            </ul>
+            </div>
+            <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+                <h3 style="color: #52BAE0;">Suggestions for UI</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 20px; margin-top: 20px">- Clean up font sizes and different type styles.</li>
+                <li style="margin-bottom: 20px;">- Make the dashboard more scannable.</li>
+            </ul>
+            </div>
+            <div style = "font-size: 1.5vw; padding-right: 5vw; margin-top: 2vh">
+                <h3 style="color: #52BAE0;">Suggestions for CTAs (Call to Action) </h3>
+                <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 20px; margin-top: 20px"> - Currently, there are four different primary CTAs, which is overwhelming</li>
+                <li style="margin-bottom: 20px;">- Consider creating more space between elements.</li>
+                <li style="margin-bottom: 20px;">- Use different CTA states (secondary, tertiary) to make it cleaner.</li>
+            
+                </ul>
+            </div>
+            </div>
+        
+
+            <div
+            class="hidden"
+            style="
+                font-weight: 600;
+                color: #227C9D;
+                margin-bottom: 4vh;
+                font-size: 2vw;
+            "
+            >
+            Conclusion
+            </div>
+            <p style="font-size: 1.5vw; padding-bottom: 8vh" class="hidden">
+                Approaching the <span style="color: #52BAE0;">Allara health dashboard redesign</span> iteratively allowed our team to stay closely aligned with <span style="color: #52BAE0;">user needs</span> while adapting to the complex nuances of women's chronic health management. Through a cycle of <span style="color: #52BAE0;">research, prototyping, testing, and refinement</span>, we were able to uncover key insights about <span style="color: #52BAE0;">user behavior, expectations, and pain points</span>—many of which may have been overlooked in a more linear process.
+                <br><br> 
+                This method fostered meaningful collaboration with <span style="color: #52BAE0;">Allara product personnel</span> and <span style="color: #52BAE0;">Google Ventures</span>, resulting in a dashboard experience that feels more <span style="color: #52BAE0;">intuitive, supportive, and empowering</span>.
+                Ultimately, the iterative approach enabled us to balance <span style="color: #52BAE0;">usability with empathy</span>, creating a design that truly reflects <span style="color: #52BAE0;">Allara’s mission of accessible, clear, patient-centered care</span>.
+            </p>
+            
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>© 2025 Simone Dunbar</div>
+         <div> <a href="mailto:">simone_dunbar@brown.edu</a></div>
+    
+     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              } else {
+                entry.target.classList.remove("show");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document
+          .querySelectorAll(".hidden")
+          .forEach((el) => observer.observe(el));
+      });
+
+      // Scroll arrow visibility logic
+      const scrollArrow = document.getElementById("scrollArrow");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          scrollArrow.classList.add("hidden-arrow");
+        } else {
+          scrollArrow.classList.remove("hidden-arrow");
+        }
+      });
+    </script>
+
+  </body>
+</html>

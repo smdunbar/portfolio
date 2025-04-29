@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Magra:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #23749d;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family:'Caveat', cursive;
+    }
+
+    .loader {
+      border: 8px solid #ddd;
+      border-top: 8px solid #4a90e2;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .name {
+      font-size: 3rem;
+      color: #fef9ef;
+      font-weight: 600;
+    }
+
+    .loading-text {
+      font-size: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="name">Simone Dunbar
+    <a href="main.html">here</a>
+  </div>
+</body>
+</html>

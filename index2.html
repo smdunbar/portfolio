@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&&family=Gloria+Hallelujah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Magra:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+ 
+</head>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        background-color: #FEF9EF;
+        font-family: 'Alata', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        height: 100vh;
+        width: 100vw;
+    }
+    .mainLayout {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100vw;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        font-size: 1.2rem;
+        padding-inline: 4vw;
+        padding-top: 4vh;
+    }
+    .options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 30vw;
+    }
+    .tagline{
+        display: flex;
+        justify-content: flex-end;
+        align-items: left;
+        flex-direction: column;
+        height: 50vh;
+        font-size: 4.5rem;
+        font-family: 'Gloria Hallelujah', cursive;
+        width: fit-content;
+        margin-left: 20vw;
+    }
+    .experience{
+        margin-top: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 10vh;
+        font-size: 1.5rem;
+        width: fit-content;
+        margin-left: 20vw;
+    }
+    .dot{
+       width: 15px; height: 15px; margin-left: 20px; margin-right: 20px;
+    }
+ 
+    .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+        }
+.show {
+            opacity: 1;
+            transform: translateY(0);
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.arrow {
+        transform: translateX(-50%);
+        animation: bounce 1s infinite;
+        transition: opacity 0.5s ease-out;
+        
+        opacity: 1 !important;;
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+padding-top: 10vh;
+width: 100%    
+}
+.hidden-arrow {
+    opacity: 0;
+    pointer-events: none;
+}
+</style>
+<body>
+<div class = mainLayout> <!-- column-->
+    <div class="header">
+        <div style=" font-size: 1.5rem;"> Simone Dunbar</div>
+        <div class="options">
+            <div style="color: #227C9D;"> My Work </div>
+            <div> My Story </div>
+            <div> My Resume </div>
+        </div>
+    </div> <!-- row-->
+    <div class="tagline hidden"> <!-- column-->
+        <!-- <div class="name"> I am a </div>
+        <div class="name"><span style="color:#17C3B2">creative</span> & <span style="color: #227C9D;">analytical</span></div>
+        <div class="name"><span style="color: #FE6D73;">problem-solver </span></div> -->
+        <img src="tagline.svg" alt="tagline" style="height: 27vh;">
+    </div>
+    <div class="experience hidden"> <!-- row-->
+        <div>CEO @ Google</div>
+        <img src="yellowdot.png" alt="yellow dot" class="dot">
+            <div>SWE @ Amazon  </div>
+            <img src="yellowdot.png" alt="yellow dot" class="dot">
+            <div> PM @ Johnson&Johnson</div>
+    </div>
+    <div class="arrow hidden">
+        <img src="arrow.png" id="scrollArrow" alt="arrow" style= "height: 50px;">
+    </div>
+    <div class="title"></div>
+    <div class="projects"></div> <!-- how to make this look like an unaligned grid? -->
+</div>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('show');
+              } else {
+                  entry.target.classList.remove('show');
+              }
+          });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
+  });
+
+  const scrollArrow = document.getElementById('scrollArrow');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                scrollArrow.classList.add('hidden-arrow');
+            } else {
+                scrollArrow.classList.remove('hidden-arrow');
+            }
+        });
+</script>
+</html>
