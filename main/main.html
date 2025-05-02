@@ -80,6 +80,7 @@
         justify-content: space-around;
         align-items: center;
         width: 30vw;
+        font-size: 1.4vw;
     }
     .tagline{
         display: flex;
@@ -99,7 +100,7 @@
         align-items: center;
         flex-direction: row;
         height: 10vh;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         width: fit-content;
         margin-left: 20vw;
     }
@@ -115,10 +116,10 @@
         margin-left: 20vw;
     }
     .dot{
-       width: 15px; height: 15px; margin-left: 20px; margin-right: 20px;
+       width: 1vw; height: 1vw; margin-left: 1.2vw; margin-right: 1.2vw;
     }
     .dotSmall{
-       width: 10px; height: 10px; margin-left: 10px; margin-right: 10px;
+       width: 0.75vw; height: 0.75vw; margin-left: 0.75vw; margin-right: 0.75vw;
     }
  
     .hidden {
@@ -228,15 +229,29 @@ background-color: #15b09f;
     width: 92vw;
 
   }
+  .menu{
+    display:none;
+  }
+  @media screen and (max-width: 850px) {
+   
+    .menu{
+      display: flex;
+    }
+
+    .options{
+      display: none;
+    }
+    
+  }
 </style>
 <body>
   <div class="withHeader"> 
     <div class="topbox"></div>
   <div class="header">
     <a href="main.html">
-    <img src="simonedunbar.svg" alt="logo" style="height: 3vh;"></a>
+    <img src="simonedunbar.svg" alt="simone dunbar logo" style="width: 18vw;"></a>
     <div class="options">
-        <div ><a style="color: #8A7DBB;" href="main.html">Work</a> </div>
+        <div ><a style="color: #8A7DBB; " href="main.html">Work</a> </div>
         <div> <a href="../about/aboutme.html">About</a> </div>
         <div> <a href="resume.pdf" target="_blank">Resume</a> </div>
         <a href="https://www.linkedin.com/in/simone-dunbar/" target="_blank">
@@ -250,6 +265,10 @@ background-color: #15b09f;
         </a>
         
     </div>
+    <div class="menu">
+
+        <img src="menu.svg" alt="menu" style="height: 4vh;">
+  </div>
   </div>
 <div class = mainLayout> <!-- column-->
      <!-- row-->
@@ -257,7 +276,7 @@ background-color: #15b09f;
         <!-- <div class="name"> I am a </div>
         <div class="name"><span style="color:#17C3B2">creative</span> & <span style="color: #227C9D;">analytical</span></div>
         <div class="name"><span style="color: #FE6D73;">problem-solver </span></div> -->
-        <img src="tagline1.svg" alt="tagline" style="height: 27vh;">
+        <img src="tagline2.svg" alt="tagline" style="width: 60vw;">
     </div>
   
     <div class="experience hidden"> <!-- row-->
@@ -271,7 +290,7 @@ background-color: #15b09f;
       &#8964;
     </div>
     <div class="title hidden">
-      <div style="font-size: 2.5rem; margin-left:10vw">Work</div>
+      <div style="font-size: 3vw; margin-left:10vw">Work</div>
       <!--<img src="mywork.svg" alt="my work" style="height: 6vh; margin-left: 10vw;">-->
     </div>
     <div class="projects">
@@ -280,13 +299,13 @@ background-color: #15b09f;
         <div class="project hidden"   id="blue" style="height: 65vh;">
           <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="allara.png" alt="allara health" style="height: auto; width: 25vw;"></div>
           <div>
-          <div style=" font-size: 2rem; margin-left: 2vw;">Allara Health Dashboard</div>
+          <div style=" font-size: 2.7vw; margin-left: 2vw;">Allara Health Dashboard</div>
           <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
-          <div style="font-size: 1.2rem;">Start-up</div>
+          <div style="font-size: 1.2vw;">Start-up</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.2rem;">Iteration</div>
+          <div style="font-size: 1.2vw;">Iteration</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.2rem;">Use Centered Design</div>
+          <div style="font-size: 1.2vw;">Use Centered Design</div>
         
       </div>
           </div>
@@ -294,14 +313,14 @@ background-color: #15b09f;
       </a>
       <a href="../accessible/AccessibleComponents.html">
           <div class="project hidden" id="purple" style=" height: 55vh;">
-            <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="component1.png" alt="component" style="height: auto; width: 10vw;"></div>
-            <div style=" font-size: 2rem; margin-left: 2vw;">Accessible Components</div>
+            <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="component1.png" alt="accessible component mockup" style="height: auto; width: 10vw;"></div>
+            <div style=" font-size: 2.7vw; margin-left: 2vw;">Accessible Components</div>
             <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
-              <div style="font-size: 1.2rem;">Accessibility</div>
+              <div style="font-size: 1.2vw;">Accessibility</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.2rem;">Redesign</div>
+          <div style="font-size: 1.2vw;">Redesign</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.2rem;">Usability</div>
+          <div style="font-size: 1.2vw;">Usability</div>
             </div>
         </div>
       </a>
@@ -311,13 +330,13 @@ background-color: #15b09f;
         <a href="../personas/Personas.html">
       <div class="project hidden" id="green" style="height: 55vh;">
         <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="persona.png" alt="persona" style="height: auto; width: 22vw;"></div>
-        <div style="font-size: 2rem; margin-left: 2vw;">Personas & Storyboarding</div>
+        <div style="font-size: 2.7vw; margin-left: 2vw;">Personas & Storyboarding</div>
             <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
-              <div style="font-size: 1.1rem;">Empathy Map</div>
+              <div style="font-size: 1.2vw;">Empathy Map</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.1rem;">User Journey</div>
+          <div style="font-size: 1.2vw;">User Journey</div>
           <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-          <div style="font-size: 1.1rem;">Scenario Analysis</div>
+          <div style="font-size: 1.2vw;">Scenario Analysis</div>
             </div>
       </div>
         </a>
@@ -325,13 +344,13 @@ background-color: #15b09f;
       <div class="project hidden" id="pink" style="height: 65vh;">
             <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;">
             <img src="responsive.png" alt="responsive redesign" style="height: auto; width: 22vw;"> </div>
-            <div style="font-size: 2rem; margin-left: 2vw;">Responsive Redesign</div>
+            <div style="font-size: 2.7vw; margin-left: 2vw;">Responsive Redesign</div>
               <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
-              <div style="font-size: 1.2rem;">Layout</div>
+              <div style="font-size: 1.2vw;">Layout</div>
               <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-              <div style="font-size: 1.2rem;">Media Queries</div>
+              <div style="font-size: 1.2vw;">Media Queries</div>
               <img src="yellowdot.png" alt="yellow dot" class="dotSmall">
-              <div style="font-size: 1.2rem;">Flexbox</div>
+              <div style="font-size: 1.2vw;">Flexbox</div>
             </div>
           </div>
         </a>

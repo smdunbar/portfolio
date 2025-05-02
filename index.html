@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Loading...</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Magra:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Gradient SVG Mask</title>
   <style>
-    body, html {
-      height: 100%;
+    body {
       margin: 0;
-      background-color: #23749d;
+      background: #fef9ef;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family:'Caveat', cursive;
+      height: 100vh;
     }
 
-    .loader {
-      border: 8px solid #ddd;
-      border-top: 8px solid #4a90e2;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
+    .masked-text {
+      width: 40vw;
+      height: 30vh;
+      background: linear-gradient(270deg, #FE6D73, #8A7DBB, #17C3B2, #227C9D);
+      background-size: 800% 800%;
+      animation: moveGradient 4s ease infinite;
+
+      mask-image: url('simonedunbar.svg');
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+
+      -webkit-mask-image: url('simonedunbar.svg');
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
     }
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    @keyframes moveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .progress-bar-container {
+      width: 40%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin-top: 10px;
+      overflow: hidden;
     }
 
-    .name {
-      font-size: 3rem;
-      color: #fef9ef;
-      font-weight: 600;
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(to right, #FE6D73 ,#8A7DBB, #17C3B2, #227C9D);
+      animation: fillProgress 4s linear forwards;
     }
 
-    .loading-text {
-      font-size: 1rem;
-      color: #888;
+    @keyframes fillProgress {
+      from { width: 0%; }
+      to { width: 100%; }
     }
   </style>
 </head>
-<body>
-  <div class="name">Simone Dunbar
-    <a href="main/main.html">here</a>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+  <div class="masked-text"></div>
+
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
   </div>
+
 </body>
+<script>
+    setTimeout(() => {
+      window.location.href = 'main/main.html';
+    }, 4000);
+  </script>
 </html>

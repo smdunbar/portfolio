@@ -158,6 +158,7 @@ a {
         justify-content: space-around;
         align-items: center;
         width: 30vw;
+        font-size: 1.4vw;
     }
     .experience{
         margin-top: 4vh;
@@ -187,3 +188,11 @@ a {
         width: 92vw;
     
       }
+      .title {
+        font-size: 2.5vw;
+        margin: 0;
+        text-align: left;
+        color: #10857A;
+        margin-bottom: 2vh;
+      }
+      

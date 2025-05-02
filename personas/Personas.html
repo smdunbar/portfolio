@@ -13,7 +13,7 @@
     <div class="topbox"></div>
         <div class="header">
             <a href="../main/main.html">
-                <img src="../main/simonedunbar.svg" alt="logo" style="height: 3vh;"></a>
+                <img src="../main/simonedunbar.svg" alt="logo" style="width: 18vw;"></a>
           <div class="options">
               <div ><a href="../main/main.html">Work</a> </div>
               <div> <a href="../about/aboutme.html">About</a> </div>
@@ -32,35 +32,109 @@
         </div>
     <div class="container">
 <div class="titleContainer hidden">
-    <img src="PS.svg" alt="logo" style="height: 30vh;">
+    <img src="PS.svg" alt="personas and storyboarding" style="height: 30vh;">
     <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
     <div class="experience hidden"> <!-- row-->
         <div>Empathy Map</div>
-        <img src="../main/yellowdot.png" alt="yellow dot" class="dot">
+        <img src="../main/yellowdot.png" alt="dot" class="dot">
             <div>User Journey  </div>
-            <img src="../main/yellowdot.png" alt="yellow dot" class="dot">
+            <img src="../main/yellowdot.png" alt="dot" class="dot">
             <div>Scenario Analysis </div>
            
         </div>
 </div>
 <div class="textContainer hidden">
     <div class="subtitle1 hidden">
-    <p style="font-size: 2vw; padding-bottom: 8vh;">Have you ever wondered what designers had in mind when creating a project? Have you noticed inconsistencies with human intuition and the design on an interface?</p>
+    
+
+    <div class= "hidden" style="margin-bottom: 12vh;">
+        <style>
+        
+            .timeline-section {
+              border-left: 3px solid #10857A;
+              margin-bottom: 1rem;
+              padding-left: 1rem;
+            }
+        
+            .timeline-header {
+              cursor: pointer;
+              font-weight: bold;
+              background-color: #aef2e9;
+              padding: 0.5rem;
+              border-radius: 5px;
+              margin-bottom: 0.5rem;
+            }
+        
+            .timeline-content {
+              display: none;
+              padding-left: 1rem;
+              margin-top: 0.3rem;
+            }
+        
+            .timeline-content p {
+              margin: 0.5rem 0;
+            }
+        
+            .active .timeline-content {
+              display: block;
+            }
+          </style>
+        
+
+        
+          <h2 style="color: #10857A; margin-bottom: 1vh;">Process Timeline</h2>
+        <p style="margin-bottom: 2vh;">Select an item to view details.</p>
+          <div class="timeline-section">
+            <div class="timeline-header" onclick="toggleSection(this)">01. Overview</div>
+            <div class="timeline-content">
+              <p>Goal and exploring the interface</p>
+            </div>
+        </div>
+        
+          <div class="timeline-section">
+            <div class="timeline-header" onclick="toggleSection(this)">02. Data Collection</div>
+            <div class="timeline-content">
+              <p>Observations and Interviews</p>
+            </div>
+          </div>
+        
+          <div class="timeline-section">
+            <div class="timeline-header" onclick="toggleSection(this)">03. Personas</div>
+            <div class="timeline-content">
+              <p>Develop two personas to represent common users</p>
+            </div>
+          </div>
+        
+          <div class="timeline-section">
+            <div class="timeline-header" onclick="toggleSection(this)">04. Storyboard</div>
+            <div class="timeline-content">
+              <p>View a persona's journey</p>
+            </div>
+          </div>
+          <div class="timeline-section">
+            <div class="timeline-header" onclick="toggleSection(this)">05. Conclusion</div>
+            <div class="timeline-content">
+              <p>What I learned, reflection</p>
+            </div>
+          </div>
+        </div>
+        <div class="title hidden">01. Overview</div>
+        <p style="font-size: 2vw; padding-bottom: 8vh;">Have you ever wondered what designers had in mind when creating a project? Have you noticed inconsistencies with human intuition and the design on an interface?</p>
     <p style="font-size: 2vw; padding-bottom: 8vh;">In interaction design, a <span style="color: #10857A;">persona</span> is a fictional representation of a user that helps designers understand their target audience. Personas are created based on user research and represent different user types, including their goals, behaviors, needs, and pain points.</p>
     <p style="font-size: 2vw; padding-bottom: 8vh;"> Today, we will explore the user interface of a <span style="color: #10857A;">CVS Pharmacy self-checkout machine</span> through the use of personas and storyboarding.</p>
     <p style="font-size: 2vw; padding-bottom: 17vh;"> Let's start by taking a look into the setup of this interface.</p>
 </div>
-    <div class="subtitle1 hidden"> <div style="font-weight: 600; color: #00C2A8">Exploring the Interface</div>
+    <div class="subtitle1 hidden"> <div style="font-weight: 600; color: #00806F">Exploring the Interface</div>
  <div>
     <div class="centeredImg">
-    <img class="imgContainer hidden" src="cvsSketch.png"></div>
+    <img class="imgContainer hidden" src="cvsSketch.png" alt="sketch of self-checkout machine"></div>
 
     <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;"> This machine aims to provide a smoother checkout for customers where they have autonomy over the purchasing process. It creates a more efficient and convenient experience for users who prefer to avoid the lines for the cashier.</p>
 </div>
 </div>
 </div>
 <div class="textContainer">
-<div class="subtitle1 hidden" style="margin-bottom: 8vh;"> <div style="font-weight: 600; padding-bottom: 4vh;color: #00C2A8">Collecting Data</div>
+    <div class="title hidden">02. Data Collection</div>
     <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">To understand the user experience of the CVS self-checkout machine, we conducted <span style="color: #10857A;">observations</span> and <span style="color: #10857A;">interviews</span> with users at a local CVS store. Here are some of the key findings:</p>
     <div class="subtitle1 hidden"> <div style="font-weight: 600; font-size: 1.7vw;">Observations</div>
     <div class = "hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold;color: #10857A;">Confident Users</div>  
@@ -89,10 +163,10 @@
 </div>
 
  
-    <div style="font-weight: 600; color: #00C2A8; margin-bottom: 4vh; font-size: 2rem;">Personas</div>
+<div class="title hidden">03. Personas</div>
     <p style="font-size: 2vw; padding-bottom: 8vh;">From the <span style="color: #10857A;">observations</span> and <span style="color: #10857A;">interview responses</span> recorded above, we can craft two distinct personas that generalize the experience of a certain type of user.</p>
     <div class="subtitle1 hidden"> <div style="font-weight: 600;">Persona 1</div>
-    <div>Running Ramon</div>
+    <div style="color: #00806F;">Running Ramon</div>
     <div style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">A rushing college student at Brown University. He has to pick up toiletries from CVS before running to make a meeting on time. Ramon doesn't have time to answer the prompts on the machine and wants to get out of the store as soon as possible. </div>
 <div style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
 He represents the user that uses self-checkout machines for convenience and speed. He is used to the self-checkout process and doesn't generally need any help from the cashier.
@@ -102,13 +176,13 @@ He represents the user that uses self-checkout machines for convenience and spee
     <img class="imgContainer hidden" src="persona1.png" alt="Persona 1" class="persona"> 
 </div>
     <div class="subtitlePersona2 hidden"> <div style="font-weight: 600;">Persona 2</div>
-    <div>Confused Callie</div>
+    <div style="color: #00806F;">Confused Callie</div>
     <div style=" font-size: 1.5vw; padding-left: 20vw; margin-top: 2vh; text-align: right;">Confused Callie is not a tech savvy girl and has a general distrust of cashiers. She likes to be in control of what she buys.</div>
     <div style=" font-size: 1.5vw; padding-left: 20vw; margin-top: 2vh; text-align: right;"> She represents the user that wants to watch over their own purchase. Although she doesn't quite understand how to use the machine, she would rather this over a cashier.</div>
     <div class="centeredImg"><img class="imgContainer hidden" src="persona2.png" alt="Persona 2" class="persona"></div>
 </div>
 
-<div class = "hidden" style="font-weight: 600; color: #00C2A8; margin-bottom: 4vh; font-size: 2rem;">Storyboard</div>
+<div class="title hidden">04. Storyboard</div>
 <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">Storyboards  <span style="color: #10857A;">detail the journey</span> of a specific persona utilizing the interface. They point out choices and actions a user may take, highlighting the <span style="color: #10857A;">successes and pain points</span> of the interface</p>
 <div class="subtitle1 hidden"> <div style="font-weight: 600; font-size: 1.7rem; ;">Confused Callie</div>
 <div class="centeredImg">
@@ -116,18 +190,14 @@ He represents the user that uses self-checkout machines for convenience and spee
 <img class="imgContainer hidden" src="story2.png" alt="Storyboard2" >
 <img class="imgContainer hidden" src="story3.png" alt="Storyboard3" >
 </div>
-<div
-            class="hidden"
-            style="
-                font-weight: 600;
-                color: #00C2A8;
-                margin-bottom: 4vh;
-                font-size: 2vw;
-            "
-            >
-            Conclusion
-            </div>
-<p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">This study of interaction can help us to better understand users and properly design with groups in mind. <span style="color: #10857A;">Data collection, persona crafting, storyboard building </span> are essential components in understanding a user population and designing effective interfaces.</p>
+<div class="title hidden">05. Conclusion</div>
+<p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">This study of interaction helps me to better understand users and properly design with groups in mind. <span style="color: #10857A;">Data collection, persona crafting, storyboard building </span> are essential components in understanding a user population and designing effective interfaces.
+    <br></br>
+    I learned not to make assumptions in design, as this can lead to a poor user experience. Instead, I learned to rely on <span style="color: #10857A;">user research</span> and <span style="color: #10857A;">testing</span> to inform design decisions. This approach ensures that the final product meets the needs and expectations of users.
+    <br></br>
+It has helped me to understand the importance of <span style="color: #10857A;">user-centered design</span> and how it can lead to better products and services. By understanding the needs and behaviors of users, designers can create interfaces that are more <span style="color: #00806F;">intuitive and user-friendly</span> .
+This ultimately leads to a better user experience and increased satisfaction with the product or service.
+</p>
 </div>
 </div>
 </div>
@@ -160,6 +230,10 @@ He represents the user that uses self-checkout machines for convenience and spee
                 scrollArrow.classList.remove('hidden-arrow');
             }
         });
+        function toggleSection(header) {
+      const section = header.parentElement;
+      section.classList.toggle("active");
+    }
 </script>
 
 </body>

@@ -136,6 +136,7 @@
     justify-content: space-around;
     align-items: center;
     width: 30vw;
+    font-size: 1.4vw;
   }
   a {
     text-decoration: none;
@@ -177,3 +178,39 @@
     width: 92vw;
 
   }
+  .title {
+    font-size: 2.5vw;
+    margin: 0;
+    text-align: left;
+    color: #C52B51;
+    margin-bottom: 2vh;
+  }
+
+                table {
+                width: 100%;
+                border: 1px solid #000000;
+                }
+            
+                th, td {
+                font-size: 1.2vw;
+                vertical-align: center;
+                padding: 1vh 2vw;
+                border: 1px solid #000000;
+
+                }
+            
+                th:first-child,
+                td:first-child {
+                width: 30%;
+                padding-right: 2vw;
+                }
+            
+                th:last-child,
+                td:last-child {
+                width: 70%;
+                }
+            
+                tr {
+                padding-bottom: 8vh;
+                }
+   

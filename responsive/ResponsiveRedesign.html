@@ -13,7 +13,7 @@
     <div class="topbox"></div>
         <div class="header">
             <a href="../main/main.html">
-                <img src="../main/simonedunbar.svg" alt="logo" style="height: 3vh;"></a>
+                <img src="../main/simonedunbar.svg" alt="logo" style="width: 18vw;"></a>
           <div class="options">
               <div ><a href="../main/main.html">Work</a> </div>
               <div> <a href="../about/aboutme.html">About</a> </div>
@@ -32,7 +32,7 @@
         </div>
     <div class="container">
         <div class="titleContainer hidden">
-            <img src="RR.svg" alt="logo" style="height: 30vh;">
+            <img src="RR.svg" alt="responsive redesign" style="height: 30vh;">
             <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
             <div class="experience hidden"> <!-- row-->
                 <div>Layout</div>
@@ -45,22 +45,103 @@
         </div>
 <div class="textContainer hidden">
     <div class="subtitle1 hidden">
+        <div class= "hidden" style="margin-bottom: 12vh;">
+            <style>
+            
+                .timeline-section {
+                  border-left: 3px solid #C52B51;
+                  margin-bottom: 1rem;
+                  padding-left: 1rem;
+                }
+            
+                .timeline-header {
+                  cursor: pointer;
+                  font-weight: bold;
+                  background-color: #f1a6a0;
+                  padding: 0.5rem;
+                  border-radius: 5px;
+                  margin-bottom: 0.5rem;
+                }
+            
+                .timeline-content {
+                  display: none;
+                  padding-left: 1rem;
+                  margin-top: 0.3rem;
+                }
+            
+                .timeline-content p {
+                  margin: 0.5rem 0;
+                }
+            
+                .active .timeline-content {
+                  display: block;
+                }
+              </style>
+            
+    
+            
+              <h2 style="color: #C52B51; margin-bottom: 1vh;">Process Timeline</h2>
+            <p style="margin-bottom: 2vh;">Select an item to view details.</p>
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">01. Overview</div>
+                <div class="timeline-content">
+                  <p>Introduction and Goals</p>
+                </div>
+            </div>
+            
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">02. Observations</div>
+                <div class="timeline-content">
+                  <p>Notes on current efficiency, memorability, learnability, accessibility, and conceptual model</p>
+                </div>
+              </div>
+            
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">03. Visual Design Style Guide</div>
+                <div class="timeline-content">
+                  <p> Fonts, icons, logos, and colors to be used </p>
+                </div>
+              </div>
+            
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">04. Mockups</div>
+                <div class="timeline-content">
+                  <p>Mockups for phone, tablet, and desktop users</p>
+                </div>
+              </div>
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">05. Implemented Redesign</div>
+                <div class="timeline-content">
+                  <p>Changes and justifications, link to redesign site</p>
+                </div>
+              </div>
+              <div class="timeline-section">
+                <div class="timeline-header" onclick="toggleSection(this)">05. Conclusion</div>
+                <div class="timeline-content">
+                  <p>What I learned, reflection</p>
+                </div>
+              </div>
+            </div>
+            <div class="title hidden">01. Overview</div>
     <p style="font-size: 2vw; padding-bottom: 8vh;">Have you ever visited a website and struggled to navigate it or learn its features?</p>
-    <p style="font-size: 2vw; padding-bottom: 8vh;">Often, this is the result of <span style="color: #F26157;">bad design choices</span> that do not prioritize <span style="color: #F26157;">information hierarchy</span> or the <span style="color: #F26157;">function</span> of spaces on the screen.</p>
+    <p style="font-size: 2vw; padding-bottom: 8vh;">Often, this is the result of <span style="color: #DF1F11;">bad design choices</span> that do not prioritize <span style="color: #DF1F11;">information hierarchy</span> or the <span style="color: #DF1F11;">function</span> of spaces on the screen.</p>
     <p style="font-size: 2vw; padding-bottom: 8vh;"> Another common issue in website design is its responsiveness. How does the webpage react when viewed on screens of varying sizes?</p>
-    <p style="font-size: 2vw; padding-bottom: 17vh;"> We can examine this issue by exploring <span > <a style="color: #F26157; text-decoration:underline ;" href="https://www.when2meet.com/">When2Meet</a></span>, a time organization platform that makes finding group meeting times easier.</p>
+    <p style="font-size: 2vw; padding-bottom: 17vh;"> We can examine this issue by exploring <span > <a style="color: #DF1F11; text-decoration:underline ;" href="https://www.when2meet.com/">When2Meet</a></span>, a time organization platform that makes finding group meeting times easier.</p>
 </div>
-    <div class="subtitle1 hidden"> <div style="font-weight: 600; color: #DF6C89; margin-bottom: 8vh;">At First Glance</div>
+    <div class="subtitle1 hidden"> <div style="font-weight: 600; color: #C52B51; margin-bottom: 8vh;">At First Glance</div>
  <div>
-    <img class="imgContainer hidden" src="before.png">
-    <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;"> I chose this website because I often use it for clubs and activities. I have never enjoyed the interface nor found it engaging or intuitive. By inspecting the page I also found that it does not respond well to page size changes as I hypothesized.</p>
+    <img class="imgContainer hidden" src="before.png" alt="before redesign">
+    <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;"> I chose this website because I often use it for clubs and activities. I have never enjoyed the interface nor found it engaging or intuitive. By inspecting the page I also found that it does not respond well to page size changes as I hypothesized.
+        <br> <br>
+        Let's redesign this website to make it more user-friendly and visually appealing! I will focus on improving the information hierarchy, accessibility, and responsiveness of the site. I will also ensure that the design is consistent across different screen sizes in order to offer a better user experience.
+    </p>
 </div>
 </div>
 </div>
 <div class="textContainer">
-<div class="subtitle1 hidden" style="margin-bottom: 8vh;"> <div style="font-weight: 600; padding-bottom: 4vh;color: #DF6C89">Observations</div>
+    <div class="title hidden">02. Observations</div>
     <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">To understand the user experience of the website, I took notes on its memorability, efficiency, learnability, conceptual model, and accessibility</p>
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; font-weight: bold; color: #F26157;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; font-weight: bold; color: #DF1F11;">
         Efficiency
     </div>
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
@@ -70,7 +151,7 @@
         - Despite this, the interface is simple and easy to navigate.
     </div>
     
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #F26157;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #DF1F11;">
         Memorability
     </div>
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
@@ -83,7 +164,7 @@
         - Buttons and icons do not have distinct styling to indicate they are clickable, which may cause confusion.
     </div>
     
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #F26157;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #DF1F11;">
         Learnability
     </div>
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
@@ -93,7 +174,7 @@
         - However, a brief description of the page’s purpose could improve clarity and help users understand their tasks more easily.
     </div>
     
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #F26157;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #DF1F11;">
         Conceptual Model
     </div>
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
@@ -103,7 +184,7 @@
         - However, beyond the calendar, the site lacks a clear conceptual model to guide users in understanding how different elements function together.
     </div>
     
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #F26157;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold; color: #DF1F11;">
         Accessibility Concerns
     </div>
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
@@ -115,42 +196,202 @@
     <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
         - The calendar is not keyboard-accessible; users can only select dates via mouse clicks, creating usability barriers for those who rely on keyboard navigation.
     </div>
-    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh;">
+    <div class="hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; margin-bottom: 8vh;">
         - These limitations could significantly impact users with accessibility needs, leading to frustration and difficulty navigating the site.
     </div>
 </div>
 
  
-    <div  class= "hidden" style="font-weight: 600; color: #DF6C89; margin-bottom: 4vh; font-size: 2rem;">Visual Design Style Guide</div>
+<div class="title hidden">03. Visual Design Style Guide</div>
     <p class= "hidden" style="font-size: 2vw; padding-bottom: 8vh;">This style guide can help keep work consistent by noting the main colors, typography, and reusable components' different states used in the design. I prioritized color and contrast.</p>
-    <img class="imgContainer hidden" src="styleguide.png">
+    <img class="imgContainer hidden" src="styleguide.png" alt="style guide">
 
-<div class = "hidden" style="font-weight: 600; color: #DF6C89; margin-bottom: 4vh; font-size: 2rem;">Mockups</div>
+    <div class="title hidden">04. Mockups</div>
 <p style="font-size: 2vw; padding-bottom: 8vh;" class="hidden"> These mockups represent the final goal for the redesigned sites visual aspects as well as its responsivity between screens. I created a stronger information hierarchy and implemented accessible solutions such as increased text size and state changes upon hover.</p>
-<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #F26157;">
+<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #DF1F11;">
     Desktop
 </div>
 <div style="display: flex; flex-direction: row; justify-content: center; width: auto;">
-<img class="imgContainer hidden" src="mockup1.png">
+<img class="imgContainer hidden" src="mockup1.png" alt="desktop mockup">
 </div>
-<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #F26157;">
+
+<div
+class="hidden"
+style="font-size: 1.5vw; ;margin-top: 2vh ; margin-bottom: 8vh;"
+>
+<table>
+    <tr>
+    <th style="color:#C52B51; font-size: 1.4rem;">Desktop to Tablet</th>
+    <th style="color:#C52B51; font-size: 1.4rem;">Justification</th>
+    </tr>
+    <tr>
+        <td>Instructions move to the top of the screen</td>
+        <td>
+            So that they are the first thing the user sees when they open the page. This is important for learnability and efficiency.         </td>
+        </td>
+        </tr>
+    <tr>
+    <td>Flexbox items in a row squeeze closer</td>
+    <td>
+        The user does not have to horizontally scroll to access content.    </td>
+    </tr>
+    <tr>
+        <td>Font sizes decrease</td>
+        <td>
+            So as not to take up the entire screen and remain proportional to other content.         </td>
+        </tr>
+   
+  
+    
+   
+    
+</table> 
+</div> 
+<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #DF1F11;">
     Tablet
 </div>
 <div style="display: flex; flex-direction: row; justify-content: center; width: auto;">
-<img class="imgContainer hidden" src="mockup2.png">
+<img class="imgContainer hidden" src="mockup2.png" alt="tablet mockup">
 </div>
-<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #F26157;">
+<div
+class="hidden"
+style="font-size: 1.5vw; ;margin-top: 2vh ; margin-bottom: 8vh;"
+>
+<table>
+    <tr>
+    <th style="color:#C52B51; font-size: 1.4rem;">Tablet to Smartphone</th>
+    <th style="color:#C52B51; font-size: 1.4rem;">Justification</th>
+    </tr>
+    <tr>
+        <td>Header options collapse to menu icon</td>
+        <td>
+            Removing oversaturation of text and replacing with an icon that implies there are more options to create a better visual layout. </td>
+        </tr>
+    <tr>
+    <td>Flexbox items in a row collapse to column</td>
+    <td>
+        The user can see all content at a proper size rather than needing to zoom in.    </td>
+    </tr>
+    <tr>
+        <td>Content scrollable</td>
+        <td>
+            The user can easily vertically scroll to access the remainder of the content </td>
+        </tr>
+        <tr>
+            <td>Submission button fixed to the bottom of the screen</td>
+            <td>
+                The user can easily access the submission without having to scroll all the way back up or down after completing the form.   </td>
+            </tr>
+    <tr>
+        <td>Font sizes decrease</td>
+        <td>
+            So as not to take up the entire screen and remain proportional to other content.         </td>
+        </tr>
+   
+  
+    
+   
+    
+</table> 
+</div> 
+<div class="hidden" style="font-size: 2rem; padding-right: 22vw; font-weight: bold; color: #DF1F11;">
    Smartphone
 </div>
 <div style="display: flex; flex-direction: row; justify-content: center; width: auto;">
-<img class="imgContainer hidden" src="mockup3.png">
+<img class="imgContainer hidden" src="mockup3.png" alt="smartphone mockup">
 </div>
 
-<div class = "hidden" style="font-weight: 600; color: #DF6C89; margin-bottom: 4vh; font-size: 2rem;">Implemented Redesign</div>
-<p style="font-size: 2vw; padding-bottom: 8vh;" class="hidden"> Through the study of the original site, I was able to redesign <a style="color: #F26157; text-decoration:underline ;" href="https://www.when2meet.com/">When2Meet</a> to better suit user needs, intuition, and accessibility. It can be accessed by the following link.</p>
+<div class="title hidden">05. Implemented Redesign</div>
+<p  style="font-size: 2vw; padding-bottom: 4vh;" class="hidden"> Through the study of the original site, I was able to redesign <a style="color: #DF1F11; text-decoration:underline ;" href="https://www.when2meet.com/">When2Meet</a> to better suit user needs, intuition, and accessibility. It can be accessed by the following link.</p>
 
-<a  href="https://smdunbar.github.io/whenTwoMeet/" style="margin-bottom: 10vh; color: #F26157; text-decoration: underline;">https://smdunbar.github.io/whenTwoMeet/</a>
+<a  class="hidden" href="https://smdunbar.github.io/whenTwoMeet/" style="font-size: 1.2rem; margin-bottom: 10vh; color: #DF1F11; text-decoration: underline;">https://smdunbar.github.io/whenTwoMeet/</a>
+<p style="font-size: 2vw; padding-bottom: 4vh; margin-top: 4vh;" class="hidden"> The new website has the following considerations and features:</p>
+<div
+class="hidden"
+style="font-size: 1.5vw; ;margin-top: 2vh ; margin-bottom: 8vh;"
+>
+<table>
+    <tr>
+    <th style="color:#C52B51; font-size: 1.4rem;">Usability Considerations</th>
+    <th style="color:#C52B51; font-size: 1.4rem;">Features</th>
+    </tr>
+    <tr>
+        <td>Efficiency</td>
+        <td>
+            <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                Dropdowns rather than text boxes allows for quick entry
+              </div>
+              <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                Defaults in the dropdowns allow for quick entry
+              </div>
+              <div style="border: 1px solid #DF1F11; padding: 10px;">
+                Not overly spread out and easily scrollable
+              </div></td>
+        </tr>
+    <tr>
+    <td>Learnability</td>
+    <td>
+        <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+            Clear instructions are at the top of the page
+          </div>
+          <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+            Clear headers for date and time sections
+          </div>
+          <div style="border: 1px solid #DF1F11; padding: 10px;">
+            Input is dropdowns rather than text boxes, creating a structured input
+          </div></td>
+    </tr>
+    <tr>
+        <td>Memorability</td>
+        <td>
+            <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                Visual hierarchy through color and size create memorable sections and easily identifiable buttons
+              </div>
+              <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                Buttons and inputs have drop shadows to indicate interaction
+              </div>
+              <div style="border: 1px solid #DF1F11; padding: 10px;">
+                Narrative Navigation
+              </div></td>
+        </tr>
+        <tr>
+            <td>Accessibility</td>
+            <td>
+                <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                    Color contrast is improved
+                  </div>
+                  <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                    State changes are added to buttons and inputs on hover
+                  </div>
+                  <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                    Large enough text size
+                  </div> 
+                  <div style="border: 1px solid #DF1F11; padding: 10px;">
+                    Font, color, and size changes offer a clear information hierarchy
+                  </div></td>
+            </tr>
+    <tr>
+        <td>Conceptual Model</td>
+        <td>
+            <div style="border: 1px solid #DF1F11; padding: 10px; margin-bottom: 8px;">
+                Date selection is in the form of a calendar to ease user interaction
+              </div>
+              </td>
+        </tr>
+   
+        
+    
+</table> 
+</div> 
+<div class="title hidden">06. Conclusion</div>
+
+        <p style="font-size: 2vw; padding-bottom: 4vh;" class="hidden">Through this project, I learned the importance of information hierarchy and accessibility in web design. 
+            <span style="color: #DF1F11;"> By focusing on the user's interactions with the site, I was able to create an efficient, memorable, learnable, and accessible redesign of the original website.</span>
+            
+            <br><br>I also learned how to use flexbox and media queries to create a responsive design. I am proud of the final product and hope it will be more user-friendly and visually appealing than the original site.</p>
+   
 </div>
+
 </div>
 </div>
 <div class="footer">
@@ -182,6 +423,10 @@
                 scrollArrow.classList.remove('hidden-arrow');
             }
         });
+        function toggleSection(header) {
+      const section = header.parentElement;
+      section.classList.toggle("active");
+    }
 </script>
 
 </body>

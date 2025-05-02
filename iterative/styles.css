@@ -152,6 +152,7 @@ top: 0;
   justify-content: space-around;
   align-items: center;
   width: 30vw;
+  font-size: 1.4vw;
 }
 a {
   text-decoration: none;
