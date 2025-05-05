@@ -55,7 +55,7 @@
         justify-content: space-between;
         align-items: center;
         color: black;
-        font-size: 1.2rem;
+        font-size: 1.4vw;
         margin-inline: 4vw;
         padding-top: 2vh;
         padding-bottom: 2vh;
@@ -172,7 +172,7 @@ font-size: 3rem;
   padding-inline: 10vw;
 
 }
-.project{
+.project1{
   width: 40vw;
   margin-right: 3vw;
   margin-top: 3vw;
@@ -183,6 +183,21 @@ font-size: 3rem;
   align-items: left;
   color: white;
   transition: all 0.3s ease;
+  height: 65vh;
+
+}
+.project2{
+  width: 40vw;
+  margin-right: 3vw;
+  margin-top: 3vw;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: left;
+  color: white;
+  transition: all 0.3s ease;
+  height: 55vh;
 
 }
 
@@ -236,13 +251,36 @@ background-color: #15b09f;
    
     .menu{
       display: flex;
+      flex-direction: column;
     }
 
     .options{
       display: none;
     }
+
+    .project1{
+      height: 45vw;
+    }
+    .project2{
+      height: 35vw;
+    }
+    .mainLayout{
+      height: 170vw;
+    }
+    .withHeader{
+      height: 180vw;
+    }
     
   }
+  .dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.hidden1{
+  display: none;
+}
 </style>
 <body>
   <div class="withHeader"> 
@@ -267,8 +305,24 @@ background-color: #15b09f;
     </div>
     <div class="menu">
 
-        <img src="menu.svg" alt="menu" style="height: 4vh;">
+        <img  src="menu.svg" alt="menu" id= "dropdownButton"style="height: 4vh;">
+        <div id="dropdownMenu" class="dropdown hidden1" style="left: 80vw;">
+          <a href="main.html">Work</a>
+          <a href="../about/aboutme.html">About</a>
+          <a href="resume.pdf">Resume</a>
+          <a href="https://www.linkedin.com/in/simone-dunbar/" target="_blank">
+           LinkedIn
+          </a>
+          <a href="https://github.com/smdunbar" target="_blank">
+            Github
+          </a>
+          <a href="mailto:simone_dunbar@brown.edu" target="_blank">
+            Email
+          </a>
+        </div>
   </div>
+  
+  
   </div>
 <div class = mainLayout> <!-- column-->
      <!-- row-->
@@ -296,7 +350,7 @@ background-color: #15b09f;
     <div class="projects">
       <div class="projectColumn">
         <a href="../iterative/IterativeDesign.html">
-        <div class="project hidden"   id="blue" style="height: 65vh;">
+        <div class="project1 hidden"   id="blue" >
           <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="allara.png" alt="allara health" style="height: auto; width: 25vw;"></div>
           <div>
           <div style=" font-size: 2.7vw; margin-left: 2vw;">Allara Health Dashboard</div>
@@ -312,7 +366,7 @@ background-color: #15b09f;
         </div>
       </a>
       <a href="../accessible/AccessibleComponents.html">
-          <div class="project hidden" id="purple" style=" height: 55vh;">
+          <div class="project2 hidden" id="purple" >
             <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="component2.png" alt="accessible component mockup" style="height: auto; width: 20vw;"></div>
             <div style=" font-size: 2.7vw; margin-left: 2vw;">Accessible Components</div>
             <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
@@ -328,7 +382,7 @@ background-color: #15b09f;
 
       <div class="projectColumn">
         <a href="../personas/Personas.html">
-      <div class="project hidden" id="green" style="height: 55vh;">
+      <div class="project2 hidden" id="green" >
         <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;"><img src="persona.png" alt="persona" style="height: auto; width: 22vw;"></div>
         <div style="font-size: 2.7vw; margin-left: 2vw;">Personas & Storyboarding</div>
             <div style="display: flex; flex-direction: row; align-items: center;margin-left: 2vw; margin-bottom: 2vw;">
@@ -341,7 +395,7 @@ background-color: #15b09f;
       </div>
         </a>
         <a href="../responsive/ResponsiveRedesign.html">
-      <div class="project hidden" id="pink" style="height: 65vh;">
+      <div class="project1 hidden" id="pink" >
             <div style="height: 100%;display:flex; flex-direction: row; justify-content: center; align-items: center;">
             <img src="responsive.png" alt="responsive redesign" style="height: auto; width: 22vw;"> </div>
             <div style="font-size: 2.7vw; margin-left: 2vw;">Responsive Redesign</div>
@@ -386,5 +440,18 @@ background-color: #15b09f;
                 scrollArrow.classList.remove('hidden-arrow');
             }
         });
+
+        const button = document.getElementById("dropdownButton");
+const menu = document.getElementById("dropdownMenu");
+
+button.addEventListener("click", () => {
+  menu.classList.toggle("hidden1");
+});
+
+document.addEventListener("click", (event) => {
+  if (!button.contains(event.target) && !menu.contains(event.target)) {
+    menu.classList.add("hidden1");
+  }
+});
 </script>
 </html>
