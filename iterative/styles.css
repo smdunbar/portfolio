@@ -79,6 +79,7 @@
   text-align: left;
   color: black;
   margin-bottom: 2vh;
+  scroll-margin-top: 20vh;
 }
 
 .textContainer2 {
@@ -160,7 +161,7 @@ a {
   }
   a:hover {
   text-decoration: none;  /* Removes the underline on hover */
-  color: #8A7DBB
+  color: #17566D
 }
 
 a:active {
@@ -169,6 +170,16 @@ a:active {
 }
 .experience{
   margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 10vh;
+  font-size: 1.5rem;
+  width: fit-content;
+}
+.experience1{
+
   display: flex;
   justify-content: center;
   align-items: center;

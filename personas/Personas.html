@@ -42,6 +42,12 @@
             <div>Scenario Analysis </div>
            
         </div>
+        <div class="experience1 hidden"> <!-- row-->
+            <div style=" margin-right: 20px;">My Role:</div>
+            <div>User Research</div>
+            
+                
+            </div>
 </div>
 <div class="textContainer hidden">
     <div class="subtitle1 hidden">
@@ -82,43 +88,39 @@
         
 
         
-          <h2 style="color: #10857A; margin-bottom: 1vh;">Process Timeline</h2>
-        <p style="margin-bottom: 2vh;">Select an item to view details.</p>
+          <h2 style="color: #10857A; margin-bottom: 1vh;">Case Study Summary</h2>
+          <p style="margin-bottom: 2vh;">Select a section to view.</p>
+          <a href="#overview" style="text-decoration: none;">
           <div class="timeline-section">
-            <div class="timeline-header" onclick="toggleSection(this)">01. Overview</div>
-            <div class="timeline-content">
-              <p>Goal and exploring the interface</p>
-            </div>
+            <div class="timeline-header" >01. Overview</div>
         </div>
-        
+    </a>
+    <a href="#data" style="text-decoration: none;">
           <div class="timeline-section">
-            <div class="timeline-header" onclick="toggleSection(this)">02. Data Collection</div>
-            <div class="timeline-content">
-              <p>Observations and Interviews</p>
-            </div>
+            <div class="timeline-header" >02. Data Collection</div>
+           
           </div>
-        
+          </a>
+          <a href="#personas" style="text-decoration: none;">
           <div class="timeline-section">
-            <div class="timeline-header" onclick="toggleSection(this)">03. Personas</div>
-            <div class="timeline-content">
-              <p>Develop two personas to represent common users</p>
-            </div>
+            <div class="timeline-header">03. Personas</div>
+           
           </div>
-        
+          </a>
+          <a href="#storyboard" style="text-decoration: none;">
           <div class="timeline-section">
-            <div class="timeline-header" onclick="toggleSection(this)">04. Storyboard</div>
-            <div class="timeline-content">
-              <p>View a persona's journey</p>
-            </div>
+            <div class="timeline-header" >04. Storyboard</div>
+           
           </div>
+          </a>
+          <a href="#conclusion" style="text-decoration: none;">
           <div class="timeline-section">
-            <div class="timeline-header" onclick="toggleSection(this)">05. Conclusion</div>
-            <div class="timeline-content">
-              <p>What I learned, reflection</p>
-            </div>
+            <div class="timeline-header">05. Conclusion</div>
+            
           </div>
+          </a>
         </div>
-        <div class="title hidden">01. Overview</div>
+        <div class="title hidden" id="overview">01. Overview</div>
         <p style="font-size: 2vw; padding-bottom: 8vh;">Have you ever wondered what designers had in mind when creating a project? Have you noticed inconsistencies with human intuition and the design on an interface?</p>
     <p style="font-size: 2vw; padding-bottom: 8vh;">In interaction design, a <span style="color: #10857A;">persona</span> is a fictional representation of a user that helps designers understand their target audience. Personas are created based on user research and represent different user types, including their goals, behaviors, needs, and pain points.</p>
     <p style="font-size: 2vw; padding-bottom: 8vh;"> Today, we will explore the user interface of a <span style="color: #10857A;">CVS Pharmacy self-checkout machine</span> through the use of personas and storyboarding.</p>
@@ -133,8 +135,8 @@
 </div>
 </div>
 </div>
-<div class="textContainer">
-    <div class="title hidden">02. Data Collection</div>
+<div class="textContainer hidden">
+    <div class="title hidden" id="data">02. Data Collection</div>
     <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">To understand the user experience of the CVS self-checkout machine, we conducted <span style="color: #10857A;">observations</span> and <span style="color: #10857A;">interviews</span> with users at a local CVS store. Here are some of the key findings:</p>
     <div class="subtitle1 hidden"> <div style="font-weight: 600; font-size: 1.7vw;">Observations</div>
     <div class = "hidden" style="font-size: 1.5vw; padding-right: 22vw; margin-top: 2vh; font-weight: bold;color: #10857A;">Confident Users</div>  
@@ -163,7 +165,7 @@
 </div>
 
  
-<div class="title hidden">03. Personas</div>
+<div class="title hidden" id="personas">03. Personas</div>
     <p style="font-size: 2vw; padding-bottom: 8vh;">From the <span style="color: #10857A;">observations</span> and <span style="color: #10857A;">interview responses</span> recorded above, we can craft two distinct personas that generalize the experience of a certain type of user.</p>
     <div class="subtitle1 hidden"> <div style="font-weight: 600;">Persona 1</div>
     <div style="color: #00806F;">Running Ramon</div>
@@ -182,7 +184,7 @@ He represents the user that uses self-checkout machines for convenience and spee
     <div class="centeredImg"><img class="imgContainer hidden" src="persona2.png" alt="Persona 2" class="persona"></div>
 </div>
 
-<div class="title hidden">04. Storyboard</div>
+<div class="title hidden" id="storyboard">04. Storyboard</div>
 <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">Storyboards  <span style="color: #10857A;">detail the journey</span> of a specific persona utilizing the interface. They point out choices and actions a user may take, highlighting the <span style="color: #10857A;">successes and pain points</span> of the interface</p>
 <div class="subtitle1 hidden"> <div style="font-weight: 600; font-size: 1.7rem; ;">Confused Callie</div>
 <div class="centeredImg">
@@ -190,7 +192,7 @@ He represents the user that uses self-checkout machines for convenience and spee
 <img class="imgContainer hidden" src="story2.png" alt="Storyboard2" >
 <img class="imgContainer hidden" src="story3.png" alt="Storyboard3" >
 </div>
-<div class="title hidden">05. Conclusion</div>
+<div class="title hidden" id="conclusion">05. Conclusion</div>
 <p class = "hidden" style="font-size: 2vw; padding-bottom: 8vh;">This study of interaction helps me to better understand users and properly design with groups in mind. <span style="color: #10857A;">Data collection, persona crafting, storyboard building </span> are essential components in understanding a user population and designing effective interfaces.
     <br></br>
     I learned not to make assumptions in design, as this can lead to a poor user experience. Instead, I learned to rely on <span style="color: #10857A;">user research</span> and <span style="color: #10857A;">testing</span> to inform design decisions. This approach ensures that the final product meets the needs and expectations of users.

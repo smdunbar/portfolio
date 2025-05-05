@@ -44,6 +44,13 @@
                         <img src="../main/yellowdot.png"alt="dot" class="dot">
                         <div> Julia Stepanenko </div>
                     </div>
+                    <div class="experience1 hidden"> <!-- row-->
+                        <div style=" margin-right: 20px;">My Role:</div>
+                        <div>UI Designer</div>
+                        <img src="../main/yellowdot.png" alt="dot" class="dot">
+                            <div> Stakeholder Communication  </div>
+                            
+                        </div>
                 </div>
             <div class="textContainer">
             
@@ -64,62 +71,40 @@
                   border-radius: 5px;
                   margin-bottom: 0.5rem;
                 }
-            
-                .timeline-content {
-                  display: none;
-                  padding-left: 1rem;
-                  margin-top: 0.3rem;
-                }
-            
-                .timeline-content p {
-                  margin: 0.5rem 0;
-                }
-            
-                .active .timeline-content {
-                  display: block;
-                }
               </style>
             
 
             
-              <h2 style="color: #17566D; margin-bottom: 1vh;">Process Timeline</h2>
-            <p style="margin-bottom: 2vh;">Select an item to view details.</p>
+              <h2 style="color: #17566D; margin-bottom: 1vh;">Case Study Summary</h2>
+            <p style="margin-bottom: 2vh;">Select a section to view.</p>
+            <a href="#overview" style="text-decoration: none;">
               <div class="timeline-section">
-                <div class="timeline-header" onclick="toggleSection(this)">01. Overview</div>
-                <div class="timeline-content">
-                  <p>Goal and stakeholder needs</p>
-                </div>
+                <div class="timeline-header" >01. Overview</div>
               </div>
-            
+              </a>
+              <a href="#sketches" style="text-decoration: none;">
               <div class="timeline-section">
-                <div class="timeline-header" onclick="toggleSection(this)">02. Sketches</div>
-                <div class="timeline-content">
-                  <p>Using project brief, sketch layouts and initial ideas.</p>
-                </div>
+                <div class="timeline-header">02. Sketches</div>
               </div>
-            
+              </a>
+              <a href="#analyze" style="text-decoration: none;">
               <div class="timeline-section">
-                <div class="timeline-header" onclick="toggleSection(this)">03. Analyze Existing Dashboard</div>
-                <div class="timeline-content">
-                  <p>View existing platform, note new paint points</p>
-                </div>
+                <div class="timeline-header" >03. Analyze Existing Dashboard</div>
               </div>
-            
+              </a>
+              <a href="#wireframe" style="text-decoration: none;">
               <div class="timeline-section">
-                <div class="timeline-header" onclick="toggleSection(this)">04. Wireframe & Prototyping</div>
-                <div class="timeline-content">
-                  <p>Wireframes, usability feedback, and final prototype</p>
-                </div>
+                <div class="timeline-header" >04. Wireframe & Prototyping</div>
               </div>
-            
+              </a>
+              <a href="#conclusion" style="text-decoration: none;">
               <div class="timeline-section">
-                <div class="timeline-header" onclick="toggleSection(this)">05. Conclusion</div>
-                <div class="timeline-content">
-                  <p>What we learned, future improvements</p>
-                </div>
+                <div class="timeline-header" id="#conclusion">05. Conclusion</div>
               </div>
+              </a>
             </div>
-            <div class="title hidden">01. Overview</div>
+
+            <div class="title hidden" id="overview">01. Overview</div>
             <div class="subtitle1 hidden">
                 <p style="font-size: 2vw; padding-bottom: 8vh">
                 Welcome to the Redesign project for Allara Health!
@@ -152,7 +137,7 @@
                     patients are often  <span style="color: #227c9d">overwhelmed by the amount of information presented to them</span>. They are also unsure of how to navigate the platform and where to find important information. Often, patients are  <span style="color: #227c9d">left confused and frustrated</span>, leading to a  <span style="color: #227c9d">lack of engagement</span> with the platform or  <span style="color: #227c9d">discontinuation of care altogether</span>.
                     The goal for Allara is to address these concerns in order to increase patient engagement and retention, by creating a platform that is <span style="color: #227c9d">intuitive, supportive, and empowering</span>.
                 </p>
-                <div class="title hidden">02. Sketches</div>
+                <div class="title hidden" id="sketches">02. Sketches</div>
                 <div class="subtitle1 hidden" style="margin-bottom: 8vh">
                     
                     <p class="hidden" style="font-size: 1.5vw; padding-bottom: 8vh">
@@ -207,7 +192,7 @@
                     <br></br>
                     </div>
                     </div>
-            <div class="title hidden">03.  Analyze Existing Dashboard</div>
+            <div class="title hidden" id="analyze">03.  Analyze Existing Dashboard</div>
             <div class="subtitle1 hidden">
                 <p class="hidden" style="font-size: 1.5vw; padding-bottom: 8vh">
                     After blind-ideating, we all took a look at the existing interface and put ourselves in the shoes of an Allara patient to develop a few more pain points.                     </p>
@@ -309,7 +294,7 @@
             </div>
             </div>
             <br />
-            <div class="title hidden"> 04. Wireframe & Prototyping</div>
+            <div class="title hidden" id="wireframe"> 04. Wireframe & Prototyping</div>
             <div class="textContainer">
             
 
@@ -650,7 +635,7 @@
                 font-size: 2vw;
             "
             >
-            <div class="title hidden">05. Conclusion</div>
+            <div class="title hidden" id="conclusion">05. Conclusion</div>
             </div>
             <p style="font-size: 1.5vw; padding-bottom: 8vh" class="hidden">
                 Approaching the <span style="color: #227c9d;">Allara health dashboard redesign</span> iteratively allowed our team to stay closely aligned with <span style="color: #227c9d;">user needs</span> while adapting to the complex nuances of women's chronic health management. Through a cycle of <span style="color: #227c9d;">research, prototyping, testing, and refinement</span>, we were able to uncover key insights about <span style="color: #227c9d;">user behavior, expectations, and pain points</span>—many of which may have been overlooked in a more linear process.

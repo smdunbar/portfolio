@@ -118,7 +118,7 @@ a {
     }
     a:hover {
     text-decoration: none;  /* Removes the underline on hover */
-    color: #8A7DBB
+    color: #10857A
   }
 
   a:active {
@@ -194,5 +194,17 @@ a {
         text-align: left;
         color: #10857A;
         margin-bottom: 2vh;
+        scroll-margin-top: 20vh;
+      }
+
+      .experience1{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 10vh;
+        font-size: 1.5rem;
+        width: fit-content;
       }
       

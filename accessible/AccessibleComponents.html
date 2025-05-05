@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Components</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    
+</head>
+<body style="background-color: #fef9ef; font-family: 'Alata',sans-serif;">
+    
+    <div class="topbox"></div>
+        <div class="header">
+            <a href="../main/main.html">
+                <img src="../main/simonedunbar.svg" alt="logo" style="width: 18vw;"></a>
+          <div class="options">
+              <div ><a href="../main/main.html">Work</a> </div>
+              <div> <a href="../about/aboutme.html">About</a> </div>
+              <div> <a href="../main/resume.pdf" target="_blank">Resume</a> </div>
+              <a href="https://www.linkedin.com/in/simone-dunbar/" target="_blank">
+                <img id="linkedin" src="../main/linkedin.svg" alt="linkedin" style="height: 4vh;">
+              </a>
+              <a href="https://github.com/smdunbar" target="_blank">
+                <img id="github" src="../main/github.svg" alt="github" style="height: 4vh;">
+              </a>
+              <a href="mailto:simone_dunbar@brown.edu" target="_blank">
+                <img id="mail" src="../main/mail.svg" alt="github" style="height: 4vh;">
+              </a>
+              
+            </div>
+        </div>
+    <div class="container">
+        <div class="titleContainer hidden">
+            <img src="AC.svg" alt="Accessible Components" style="height: 30vh;">
+            <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
+            <div class="experience hidden"> <!-- row-->
+                <div>Accessibility</div>
+                <img src="../main/yellowdot.png"alt="yellow dot" class="dot">
+                    <div>Redesign </div>
+                    <img src="../main/yellowdot.png" alt="yellow dot" class="dot">
+                    <div>Usability</div>
+                   
+                </div>
+                <div class="experience1 hidden"> <!-- row-->
+                    <div style=" margin-right: 20px;">My Role:</div>
+                    <div>Interaction Designer</div>
+                    
+                        
+                    </div>
+        </div>
+    <div class="textContainer hidden">
+        <div class="subtitle1 hidden">
+            <div class= "hidden" style="margin-bottom: 12vh;">
+                <style>
+                
+                    .timeline-section {
+                      border-left: 3px solid #6B54C0;
+                      margin-bottom: 1rem;
+                      padding-left: 1rem;
+                    }
+                
+                    .timeline-header {
+                      cursor: pointer;
+                      font-weight: bold;
+                      background-color: #c0b9da;
+                      padding: 0.5rem;
+                      border-radius: 5px;
+                      margin-bottom: 0.5rem;
+                    }
+                
+                 
+                  </style>
+                
+        
+                
+                  <h2 style="color: #6B54C0; margin-bottom: 1vh;">Case Study Summary</h2>
+                  <p style="margin-bottom: 2vh;">Select a section to view.</p>
+                  
+                  <a href="#overview"> <div class="timeline-section">
+                    <div class="timeline-header" >01. Overview</div>
+                </div>
+              </a>
+                <a href="#research"> 
+                  <div class="timeline-section">
+                    <div class="timeline-header" >02. Research</div>
+                  </div>
+                  </a>
+                  <a href="#implementation"> 
+                  <div class="timeline-section">
+                    <div class="timeline-header" >03. Implementation</div>
+                    
+                  </div>
+                  <a href="#conclusion"> 
+                  <div class="timeline-section">
+                    <div class="timeline-header" >04. Conclusion</div>
+                    
+                  </div>
+                </a>
+                  
+                </div>
+
+                <div class="title hidden" id="overview">01. Overview</div>
+               
+                    <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                        Goal
+                        </div>
+                        <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                            - Understand how components support accessibility by accommodating multiple input methods (mouse, keyboard) and output forms (visual style, text, screen reader labels).
+<br></br>
+- Recognize that components exist in different states to handle user interactions effectively.
+<br></br>
+- Learn to modify components by balancing trade-offs between learnability, memorability, efficiency, and accessibility.
+                            </p>
+                            <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                                Problem Statement
+                                </div>
+                                <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                                    Imagine yourself navigating a website or application with a motor, visual, or audio disability. How would your experience differ from the typical user? Consider the challenges you might face with interactions, visibility, and the overall usability of the platform. How can design elements be modified or added to ensure that your experience is as seamless and efficient as possible, without feeling excluded or frustrated?
+<br></br>
+In user-centered design, it is essential to consider all user groups. Many commonly used components lack accessibility for individuals with motor, visual, or auditory disabilities. With this in mind, redesign a checklist or radio component by balancing learnability, memorability, efficiency, and accessibility. Using existing implementations as a foundation, evaluate the component's accessibility features to assess its usability and identify potential shortcomings.
+
+
+                                </p>
+                <div class="title hidden" id="research">02. Research</div>
+                <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                    Input
+                    </div>
+                <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                I analyzed the checklist/radio component interaction implementation of three commonly visited website: Amazon, Airbnb, and Google Forms. In order to asses their effectiveness, I reflected on following questions:
+                <br></br>
+- What is the process of interacting with each component like? What's different?
+<br></br>
+- What are all the functions the component can do (or can't do)?
+<br></br>
+- Apply the considerations from class: what functionalities of the component are learnable, memorable, efficient?
+<br></br>
+My findings are summarized in the table below.
+                            </p>
+
+                            <div
+class="hidden"
+style="font-size: 1.5vw; ;margin-top: 2vh ; margin-bottom: 8vh;"
+>
+<table>
+    <tr>
+    <th style="color:#7D5EF2; font-size: 1.4rem;"></th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Amazon</th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Airbnb</th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Google Forms</th>
+    </tr>
+    <tr>
+        <td>Mouse/Touchpad</td>
+        <td>
+            In order to select an item, you must click button or label. Every selection reloads the entire page, so if you needed to select many filters, it would be inefficient.
+        </td>
+        <td>
+            Clicking anything in the line of the option will select it rather than just the button and label. You have to select the enter button to search allowing multiple selections without reload.
+        </td>
+        <td>
+            There are a few pixels of padding around the label and chekbox that can be selected. Allows for less precision, but not as accesible as Airbnb.
+        </td>
+     </tr>
+    <tr>
+    <td>Keyboard</td>
+    <td>
+        Using tab starts at the checkbox options and focuses through each one. Use enter key to select and deselect options. This is an intuitive action and is learnable.  
+    </td>
+    <td>
+        You can step through options logically with tab key. Use spacebar to select but this is unintiutive for new users compared to enter key.
+    </td>
+    <td>
+        You can use tab to go through the options and spacebar to select/unselect. Enter can not be used to select/unselect.
+    </td>
+    </tr>
+    <tr>
+        <td>Mobile</td>
+        <td>
+            The list is organized differently. You have to find the tab where the filter options are.        
+        </td>
+        <td>
+            Functionality remains the same as touchpad.
+        </td>
+        <td>
+            Functionality remains the same as touchpad.
+        </td>
+        </tr>
+        
+</table> 
+</div>
+<p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+    I have concluded from this input research that while many applications aim to meet accessibility needs, there are some aspects of their component designs that can be improved for increased effectiveness.
+    </p>
+<div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+    Output</div>
+<p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+    Inputs modify the state of a component, and outputs serve as a visual or functional representation of that state. They allow for a user to better understand their interaction with the component. These outputs can manifest as changes in color, opacity, border size, 3D effects, and more. State can also be conveyed through text. Furthermore, some outputs are not immediately visible, like alt text or component labels, which are typically accessed by screen readers for users with visual impairments.
+<br></br>
+    Returning the the aforementioned three websites, I analyzed the generated output and compared my findings below.
+</p>
+<div
+class="hidden"
+style="font-size: 1.5vw; ;margin-top: 2vh ; margin-bottom: 8vh;"
+>
+<table>
+    <tr>
+    <th style="color:#7D5EF2; font-size: 1.4rem;"></th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Amazon</th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Airbnb</th>
+    <th style="color:#7D5EF2; font-size: 1.4rem;">Google Forms</th>
+    </tr>
+    <tr>
+        <td>Mouse/Touchpad</td>
+        <td>
+            3 states (default, hover, selected).Selected places a checkmark in the box.
+        </td>
+        <td>
+            3 states (default, hover, selected) Hover barely changes the look of the component. The box is slightly bolded. Selected places a checkmark in the box. every selection updates the submit button to include the number of rentals that exist.
+        </td>
+        <td>
+            3 states (default, hover, selected) Selected places a checkmark in the box.
+        </td>
+     </tr>
+    <tr>
+    <td>Keyboard</td>
+    <td>
+        Focus state replaced hover (heavily bolded around the checkbox)
+    </td>
+    <td>
+        Focus state replaced hover (heavily bolded around the checkbox).    
+    </td>
+    <td>
+        Focus state replaced hover (heavily bolded around the checkbox).
+    </td>
+    </tr>
+    <tr>
+        <td>Mobile</td>
+        <td>
+            2 states (no hover). Organized differently than desktop site.
+        </td>
+        <td>
+            2 states (no hover). Checkboxes are not oriented the same as on the desktop and you need to put in a direct search to access the filters.
+        </td>
+        <td>
+            2 states (no hover)
+        </td>
+        </tr>
+        
+</table> 
+</div>
+<p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+    Screen Reader
+    <br></br>
+I also used a screen reader to navigate through the component. While there were slight differences in how each company's component interacted with the reader, the overall experience was very unintuitive. For a new user, it was challenging to navigate to the component properly. Moving through the items in the checklist was nearly impossible.
+<br></br>
+<span style="color: #7D5EF2;">Amazon</span>
+<br></br>
+I followed the instructions the reader told me and successfully navigated to the component group, but was unable to parse through optins or select them even when I used the keys it indicated.
+<br></br>
+<span style="color: #7D5EF2;">Airbnb</span>
+<br></br>
+Same issue as Amazon. It was not intuitive how to move through the options. Maybe I am just not well-versed in the usage of screenreaders, but I also think it could have been made more learnable.
+<br></br>
+<span style="color: #7D5EF2;">Google Forms</span>
+<br></br>
+It was easier to get to the items in the list, but I could not select them.
+</p>
+<div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+    Observation Images
+    </div>
+    <p style="font-size: 1.5vw;" class="hidden">
+        Amazon
+       
+        <div class="grid-container">
+            <img class="imgContainer hidden" src="defaultAmazon.png" alt="Amazon default state"/>
+            <img class="imgContainer hidden" src="hoverAmazon.png" alt="Amazon Hover state"/>
+            <img class="imgContainer hidden" src="selectAmazon.png" alt="Amazon selected state"/>
+            </div>
+        Airbnb
+        <div class="grid-container">
+            <img class="imgContainer hidden" src="defaultBnb.png" alt="AirBnb default state"/>
+            <img class="imgContainer hidden" src="hoverBnb.png" alt="AirBnb  Hover state"/>
+            <img class="imgContainer hidden" src="selectBnb.png" alt="AirBnb  selected state"/>
+            </div>
+        Google Forms
+        <div class="grid-container">
+            <img class="imgContainer hidden" src="defaultGoogle.png" alt="Google Form default state"/>
+            <img class="imgContainer hidden" src="hoverGoogle.png" alt="Google Form Hover state"/>
+            <img class="imgContainer hidden" src="selectGoogle.png" alt="Google Form selected state"/>
+            </div>
+        </p>
+        
+                <div class="title hidden" id="implementation">03. Implementation</div>
+                <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                    I chose to redesign the Airbnb checklist component.
+                    <br></br>
+                    Below are the original state models of the Airbnb checklist component:
+                    </p>
+                    <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                        Original State Models
+                        </div>
+                        <div class="grid-container">
+                            <img class="imgContainer hidden"  style="width: 40vw; height: auto; margin-right: 2vw;" src="beforeMouse.png" alt="before state models for mouse user"/>
+                            <img class="imgContainer hidden"  style="width: 40vw; height: auto;"src="beforeKeyboard.png" alt="before state models for keyboard user"/>
+                            </div>
+                       
+                            <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                                Redesigned State Models
+                            </div>
+                            <div class="grid-container">
+                            <img class="imgContainer "  style="width: 40vw; height: auto; margin-right: 2vw;" src="alteredMouse2.png" alt="altered state models for mouse user"/>
+                            <img class="imgContainer "  style="width: 40vw; height: auto;" src="alteredKeyboard2.png" alt="altered state models for keyboard user"/>
+                            </div>
+                            
+                          
+                    <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                        My goal in the redesign was to allow more flexibility for the area that users need to click. I expanded the input to include the entire line that the item lies on rather than only the box and label. This was to increase efficiency. I also wanted to include a line of instruction for learnability. It was important to me that the hover function had a clearer state change. For keyboard users, I included enter as a selection/deselection key as I beleive it to be more intuitive than spacebar.
+    
+    
+                        </p> 
+            <div class="title hidden" id="conclusion">04. Conclusion</div>
+                <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                    <span style="color: #7D5EF2;">In my observations, I found that different components excelled in usability and accessibility in various ways:</span>
+<br></br>
+- Amazon's keyboard navigation is intuitive, allowing users to tab through options and use the enter key for selection, enhancing learnability.
+<br></br>
+- Airbnb improves accessibility for mouse and touchpad users by expanding the clickable area beyond just the checkbox and label, making selection easier for those with motor impairments.
+<br></br>
+- Airbnb also prevents unnecessary page reloads, improving efficiency and streamlining the selection process.
+<br></br>
+- Google Forms provides a slight selection buffer around checkboxes, requiring less precision, which benefits users with motor difficulties.
+<br></br>
+<span style="color: #7D5EF2;">In my design, I aimed to use the successful features of these applications as well as improve upon some points they missed:</span>
+<br></br>
+- My design ensured full keyboard accessibility by allowing users to navigate with the tab key and select/deselect using both the enter and spacebar keys.
+<br></br>
+- I expanded the clickable area around each option to enhance usability for users with limited precision and address their "mismatch" with traditional clickable areas.
+<br></br>
+- A key improvement in my design was the inclusion of instructions, which increased the learnability of the component for first-time users.
+<br></br>
+<span style="color: #7D5EF2;">After completing this case study, I have learned a lot about the way companies view accessible interaction design:</span>
+<br></br>
+- Many companies prioritize mouse and touchpad users because they make up the majority, often neglecting marginalized users with different accessibility needs.
+<br></br>
+- To create truly inclusive experiences, designers must balance trade-offs and consider usability for all users, not just the majority.
+<br></br> 
+</p>
+                <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #6B54C0;">
+                    Impact
+                    </div>
+                    <p style="font-size: 1.5vw; padding-bottom: 8vh">
+                        While I challenged you to imagine yourself as a person with a motor, visual, or audio disability, the truth is that we are privileged to ignore inaccessible designs. So, doing adamant research and implementing proper features can help to keep accessibility at the forefront, ensuring that all users—regardless of their abilities—can navigate and interact with digital spaces effectively. It's essential to prioritize inclusivity in design, so no one is left behind when engaging with technology.
+                        </p>
+
+</div>
+    </div>
+    </div>
+    <div class="footer">
+        <div>© 2025 Simone Dunbar</div>
+    
+     </div>
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
+    });
+
+        // Scroll arrow visibility logic
+        const scrollArrow = document.getElementById('scrollArrow');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                scrollArrow.classList.add('hidden-arrow');
+            } else {
+                scrollArrow.classList.remove('hidden-arrow');
+            }
+        });
+        function toggleSection(header) {
+      const section = header.parentElement;
+      section.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

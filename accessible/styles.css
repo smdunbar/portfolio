@@ -144,7 +144,7 @@
     }
     a:hover {
     text-decoration: none;  /* Removes the underline on hover */
-    color: #C52B51
+    color: #6B54C0
   }
   
   a:active {
@@ -182,9 +182,8 @@
     font-size: 2.5vw;
     margin: 0;
     text-align: left;
-    color: #C52B51;
+    color: #6B54C0;
     margin-bottom: 2vh;
-    scroll-margin-top: 20vh;
   }
 
                 table {
@@ -200,17 +199,6 @@
 
                 }
             
-                th:first-child,
-                td:first-child {
-                width: 30%;
-                padding-right: 2vw;
-                }
-            
-                th:last-child,
-                td:last-child {
-                width: 70%;
-                }
-            
                 tr {
                 padding-bottom: 8vh;
                 }
@@ -223,4 +211,9 @@
                     height: 10vh;
                     font-size: 1.5rem;
                     width: fit-content;
+                  }
+                  .grid-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
                   }
