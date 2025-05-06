@@ -13,7 +13,7 @@
     <div class="topbox"></div>
         <div class="header">
             <a href="../main/main.html">
-                <img src="../main/simonedunbar.svg" alt="logo" style="width: 18vw;"></a>
+                <img src="../main/simonedunbar.svg" alt="simone dunbar logo" style="width: 18vw;"></a>
           <div class="options">
               <div ><a href="../main/main.html">Work</a> </div>
               <div> <a href="../about/aboutme.html">About</a> </div>
@@ -25,7 +25,7 @@
                 <img id="github" src="../main/github.svg" alt="github" style="height: 4vh;">
               </a>
               <a href="mailto:simone_dunbar@brown.edu" target="_blank">
-                <img id="mail" src="../main/mail.svg" alt="github" style="height: 4vh;">
+                <img id="mail" src="../main/mail.svg" alt="email" style="height: 4vh;">
               </a>
               
             </div>
@@ -106,22 +106,21 @@
                         Goal
                         </div>
                         <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
-                            - Understand how components support accessibility by accommodating multiple input methods (mouse, keyboard) and output forms (visual style, text, screen reader labels).
+                            - Understand how components support accessibility by  <span style="color: #7D5EF2;">accommodating multiple input methods (mouse, keyboard)</span> and output forms (visual style, text, screen reader labels).
 <br></br>
-- Recognize that components exist in different states to handle user interactions effectively.
+- Recognize that components exist in  <span style="color: #7D5EF2;">different states</span> to handle user interactions effectively.
 <br></br>
-- Learn to modify components by balancing trade-offs between learnability, memorability, efficiency, and accessibility.
+- Learn to modify components by  <span style="color: #7D5EF2;">balancing trade-offs between learnability, memorability, efficiency, and accessibility.</span>
                             </p>
                             <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
                                 Problem Statement
                                 </div>
                                 <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
-                                    Imagine yourself navigating a website or application with a motor, visual, or audio disability. How would your experience differ from the typical user? Consider the challenges you might face with interactions, visibility, and the overall usability of the platform. How can design elements be modified or added to ensure that your experience is as seamless and efficient as possible, without feeling excluded or frustrated?
-<br></br>
-In user-centered design, it is essential to consider all user groups. Many commonly used components lack accessibility for individuals with motor, visual, or auditory disabilities. With this in mind, redesign a checklist or radio component by balancing learnability, memorability, efficiency, and accessibility. Using existing implementations as a foundation, evaluate the component's accessibility features to assess its usability and identify potential shortcomings.
-
-
+                                    <span style="color: #7d5ef2;">Imagine yourself navigating a website or application with a motor, visual, or audio disability.</span> How would your experience differ from the typical user? Consider the challenges you might face with <span style="color: #7d5ef2;">interactions</span>, <span style="color: #7d5ef2;">visibility</span>, and the overall <span style="color: #7d5ef2;">usability</span> of the platform. How can <span style="color: #7d5ef2;">design elements</span> be modified or added to ensure that your experience is as seamless and efficient as possible, without feeling excluded or frustrated?
+                                    <br><br>
+                                    In <span style="color: #7d5ef2;">user-centered design</span>, it is essential to consider <span style="color: #7d5ef2;">all user groups</span>. Many commonly used components <span style="color: #7d5ef2;">lack accessibility</span> for individuals with <span style="color: #7d5ef2;">motor, visual, or auditory disabilities</span>. With this in mind, <span style="color: #7d5ef2;">redesign a checklist or radio component</span> by balancing <span style="color: #7d5ef2;">learnability</span>, <span style="color: #7d5ef2;">memorability</span>, <span style="color: #7d5ef2;">efficiency</span>, and <span style="color: #7d5ef2;">accessibility</span>. Using existing implementations as a foundation, evaluate the component's <span style="color: #7d5ef2;">accessibility features</span> to assess its <span style="color: #7d5ef2;">usability</span> and identify potential <span style="color: #7d5ef2;">shortcomings</span>.
                                 </p>
+                                
                 <div class="title hidden" id="research">02. Research</div>
                 <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
                     Input
@@ -318,6 +317,46 @@ It was easier to get to the items in the list, but I could not select them.
     
     
                         </p> 
+                        <div  class="subtitle1 hidden"style="font-weight: 600; padding-bottom: 4vh; color: #7D5EF2;">
+                            Final Redesign
+                        </div>
+                        <div class="grid-container">
+                            <img class="imgContainer "  style="width: 27vw; height: auto; margin-right: 2vw;" src="default.png" alt="redesigned default state"/>
+                            <img class="imgContainer "  style="width: 27vw; height: auto;  margin-right: 2vw;" src="hover.png" alt="redesigned hover state"/>
+                            <img class="imgContainer "  style="width: 27vw; height: auto;" src="selected.png" alt="redesigned selected state"/>
+
+                        </div>
+                        <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
+                            I made changes to the original state models of the Airbnb checklist component. I paid close attention to the learnability, memorability, efficiency, and accessibility of the component. I also made sure to include a screen reader label for the component. The final design is shown above with notes on the changes I made below:
+                            <br></br>
+                            <span style="color: #7D5EF2;">Learnability:</span>
+                            <br></br>
+- short instructional line
+<br></br>
+- users will know how to interact with the component.
+<br></br>
+<span style="color: #7D5EF2;">Memorability:</span>
+<br></br>
+- expanded the keyboard shortcuts to include down/up arrows to toggle between options.
+<br></br>
+- more intuitive and helpful for frequent users.
+<br></br>
+<span style="color: #7D5EF2;">Accessibility:</span>
+<br></br>
+- increased the contrast in visual output between default and hover states.
+<br></br>
+- allow users to more easily see the list items they can select.
+<br></br>
+- improved upon the old hover state which barely outlined the checkbox
+<br></br>
+- may also help those that are visually impaired. 
+<br></br>
+<span style="color: #7D5EF2;">Efficiency:</span>
+<br></br>
+- I also expanded the selection window for a given item to be the box, label, and the horizontally aligned area near the label.
+<br></br>
+- selection quicker and easier because you do not have to be particular about clicking inside the box.    
+<br></br>                      </p> 
             <div class="title hidden" id="conclusion">04. Conclusion</div>
                 <p style="font-size: 1.5vw; padding-bottom: 4vh" class="hidden">
                     <span style="color: #7D5EF2;">In my observations, I found that different components excelled in usability and accessibility in various ways:</span>

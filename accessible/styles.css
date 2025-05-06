@@ -44,7 +44,7 @@
             
         }
 .hidden {
-            opacity: 0;
+            
             transform: translateY(30px);
             transition: opacity 1.3s ease-out, transform 1.3s ease-out;
         }
@@ -184,6 +184,7 @@
     text-align: left;
     color: #6B54C0;
     margin-bottom: 2vh;
+    scroll-margin-top: 20vh;
   }
 
                 table {
